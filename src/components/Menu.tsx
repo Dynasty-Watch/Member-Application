@@ -11,7 +11,7 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
-import {homeOutline} from 'ionicons/icons';
+import {barChartOutline, homeOutline, peopleCircleOutline, personCircleOutline, settingsOutline, umbrellaOutline} from 'ionicons/icons';
 import './Menu.css';
 
 export const Menu = () => {
@@ -35,23 +35,27 @@ return (
           </IonItem>
         </IonMenuToggle>
         <IonMenuToggle auto-hide="false">
-          <IonItem button routerLink={""} routerDirection="none">
-
+          <IonItem button routerLink={"/profile"} routerDirection="none">
+            <IonIcon icon={personCircleOutline}/>
+            <IonLabel>Profile</IonLabel>
           </IonItem>
         </IonMenuToggle>
         <IonMenuToggle auto-hide="false">
-          <IonItem button routerLink={""} routerDirection="none">
-
+          <IonItem button routerLink={"/statistics"} routerDirection="none">
+          <IonIcon icon={barChartOutline}/>
+          <IonLabel>Statistics</IonLabel>
           </IonItem>
         </IonMenuToggle>
         <IonMenuToggle auto-hide="false">
-          <IonItem button routerLink={""} routerDirection="none">
-
+          <IonItem button routerLink={"/request"} routerDirection="none">
+            <IonIcon icon={umbrellaOutline}/>
+            <IonLabel>Request</IonLabel>
           </IonItem>
         </IonMenuToggle>
         <IonMenuToggle auto-hide="false">
-          <IonItem button routerLink={""} routerDirection="none">
-
+          <IonItem button routerLink={"/settings"} routerDirection="none">
+            
+            <IonLabel>Settings</IonLabel>
           </IonItem>
         </IonMenuToggle>
       </IonList>
