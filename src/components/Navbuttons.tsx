@@ -7,7 +7,10 @@ export const NavButtons = () => {
         matches: window.innerWidth > 768? true : false,
        });
 
-    useEffect(() => { window.matchMedia("(min-width: 768px)").addListener(setMquery);}),[];
+    useEffect(() => { 
+        window.matchMedia("(min-width: 768px)").addListener(setMquery);
+    },[]);
+    
     console.log(mQuery.matches)
 
     return (
