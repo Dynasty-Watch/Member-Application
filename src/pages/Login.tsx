@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
   IonButton,
   IonContent,
@@ -12,26 +12,32 @@ import {
   IonToolbar,
   useIonToast,
   useIonLoading,
-} from '@ionic/react';
-import { supabase } from '../../supabaseClient';
-export function LoginPage() {
-  const [email, setEmail] = useState('');
+} from "@ionic/react";
 
+import supabase from "../supabaseClient";
+
+export function LoginPage() {
+  const [email, setEmail] = useState("");
   const [showLoading, hideLoading] = useIonLoading();
-  const [showToast ] = useIonToast();
+  const [showToast] = useIonToast();
+
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
-    console.log()
     e.preventDefault();
+
     await showLoading();
     try {
       await supabase.auth.signIn({ email });
-      await showToast({ message: 'Check your email for the login link!' });
+      await showToast({ message: "Check your email for the login link!" });
     } catch (e: any) {
-      await showToast({ message: e.error_description || e.message , duration: 5000});
+      await showToast({
+        message: e.error_description || e.message,
+        duration: 5000,
+      });
     } finally {
       await hideLoading();
     }
   };
+
   return (
     <IonPage>
       <IonHeader>
@@ -52,7 +58,7 @@ export function LoginPage() {
               <IonInput
                 value={email}
                 name="email"
-                onIonChange={(e) => setEmail(e.detail.value ?? '')}
+                onIonChange={(e) => setEmail(e.detail.value ?? "")}
                 type="email"
               ></IonInput>
             </IonItem>
