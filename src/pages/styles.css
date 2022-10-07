@@ -1,0 +1,67 @@
+.GeoMap {
+    width: 100%;
+    height: 100%;
+}
+
+.geoFooter {
+    position: absolute;
+    bottom: 0;
+    /* margin: auto; */
+    left: 0;
+    right: 0;
+    margin: 16px;
+}
+
+.geoAbs {
+    position: absolute;
+    bottom: 40px;
+    /* margin: auto; */
+    left: 0;
+    right: 0;
+    margin: 16px;
+}
+.pointer {
+    border-top: 20px solid red;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    bottom: -18px;
+}
+.full-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container{
+    width: 100%;
+    height: 100%;
+} 
+
+.description {
+    height: 100px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.item-text {
+    text-align: center;
+}
+
+.modal-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.crime-type {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

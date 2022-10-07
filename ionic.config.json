@@ -1,0 +1,7 @@
+{
+  "name": "dynasty-watch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

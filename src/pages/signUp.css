@@ -1,0 +1,24 @@
+.header-text {
+    text-align:center;
+}
+
+.body-text {
+    text-align: center;
+}
+
+.login-text {
+    text-align: center;
+    font-size: small;
+}
+
+.signIn-text {
+    text-align: center;
+    font-size: medium;
+    color: black;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}

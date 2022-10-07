@@ -1,0 +1,31 @@
+.ion-padding{
+    align-items: center;
+};
+.middle{
+    align-content: center;
+}
+
+.header-text {
+    text-align:center;
+}
+
+.body-text {
+    text-align: center;
+}
+
+.forgotPassword-text {
+    text-align: center;
+    font-size: small;
+}
+
+.signUp-text {
+    text-align: center;
+    font-size: small;
+    color: black;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
