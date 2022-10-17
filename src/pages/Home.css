@@ -1,0 +1,22 @@
+.header-text {
+    text-align: center;
+}
+
+.item-text {
+    text-align: center;
+}
+
+.modal-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.crime-type {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
